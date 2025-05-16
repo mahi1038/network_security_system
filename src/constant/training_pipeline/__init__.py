@@ -25,6 +25,8 @@ FILE_NAME = 'phisingData.csv'
 TRAIN_FILE_NAME = "train.csv"
 TEST_FILE_NAME = "test.csv"
 
+SCHEMA_FILE_PATH = os.path.join("data_schema", "schema.yaml")
+
 
 """
 variables for data validation
@@ -34,6 +36,21 @@ DATA_VALIDATION_DIR_NAME = "data_validation_dir"
 DATA_VALIDAITON_VALID_DIR_NAME = 'valid_dir'
 DATA_VALIDATION_INVALID_DIR_NAME = 'invalid_dir'
 DATA_VALIDATION_DRIFT_REPORT_DIR_NAME = 'report_dir'
-DATA_VALIDATION_DRIFT_REPORT_NAME = 'report'
+DATA_VALIDATION_DRIFT_REPORT_NAME = 'report.yaml'
+
+"""
+variables for data transformation
+"""
+
+DATA_TRANSFORMATION_DIR_NAME = 'data_transformation_dir'
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR = 'tranformed'
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR = 'transformed_object'
+PREPROCESSOR_OBJECT_FILE_NAME = 'preprocessor.pkl'
+
+DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {
+    'missing_values': np.nan,
+    'n_neighbours': 3,
+    'weights': 'uniform'
+}
 
 

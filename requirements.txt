@@ -6,3 +6,4 @@ certifi
 python-dotenv
 dill
 scikit-learn
+pyaml

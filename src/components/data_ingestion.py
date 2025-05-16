@@ -47,8 +47,8 @@ class DataIngestion:
         dir_path = os.path.dirname(self.data_ingestion_config.train_path)
         os.makedirs(dir_path, exist_ok = True)
 
-        train_set.to_csv(self.data_ingestion_config.train_path, index = True, header = False)
-        test_set.to_csv(self.data_ingestion_config.test_path, index = True, header = False)
+        train_set.to_csv(self.data_ingestion_config.train_path, index = False, header = True)
+        test_set.to_csv(self.data_ingestion_config.test_path, index = False, header = True)
 
 
 
