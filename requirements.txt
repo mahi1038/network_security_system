@@ -1,0 +1,8 @@
+numpy 
+pandas
+pymongo
+pymongo[srv]==3.12
+certifi
+python-dotenv
+dill
+scikit-learn
