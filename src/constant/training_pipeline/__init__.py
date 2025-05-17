@@ -49,7 +49,7 @@ PREPROCESSOR_OBJECT_FILE_NAME = 'preprocessor.pkl'
 
 DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {
     'missing_values': np.nan,
-    'n_neighbours': 3,
+    'n_neighbors': 3,
     'weights': 'uniform'
 }
 
