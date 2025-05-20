@@ -45,6 +45,16 @@ def save_object_pkl(filepath: str, obj: object):
     with open(filepath, 'wb') as file:
         pickle.dump(obj, file)
 
+def load_object(filepath: str) -> object:
+    if not os.path.exists(filepath):
+        print(f'the file at the given path {filepath} does not exist')
+    with open(filepath, 'rb') as file:
+        return pickle.load(file)
+    
+def load_numpy_array(filepath: str) -> np.array:
+    with open(filepath, 'rb') as file:
+        return np.load(file)
+
 
 
 

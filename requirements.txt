@@ -7,3 +7,6 @@ python-dotenv
 dill
 scikit-learn
 pyaml
+mlflow
+fastapi 
+uvicorn

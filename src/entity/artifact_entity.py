@@ -24,4 +24,19 @@ class DataTransformationArtifactConfig:
         self.transformed_train_file_path = transformed_train_file_path
         self.transformed_test_file_path = transformed_test_file_path
         self.transformed_object_file_path = transformed_object_file_path
-    
+
+class ClassificationMetricArtifact:
+    def __init__(self, f1_score: float,
+                 precision_score: float,
+                 recall_score: float):
+        self.f1_score = f1_score
+        self.precision_score = precision_score
+        self.recall_score = recall_score 
+
+class ModelTrainerArtifactConfig:
+    def __init__(self, trained_model_file_path: str,
+                 train_metric_artifact: ClassificationMetricArtifact,
+                 test_metric_artifact: ClassificationMetricArtifact):
+        self.trained_model_file_path = trained_model_file_path
+        self.train_metric_artifact = train_metric_artifact
+        self.test_metric_artifact = test_metric_artifact
