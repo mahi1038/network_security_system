@@ -110,21 +110,25 @@ The following models are trained and compared based on classification metrics:
 
 ## 📦 Installation
 
-### 1. Clone the repository
+ 1. Clone the repository-
 git clone https://github.com/your-username/online-security-system.git
-cd online-security-system
-
-### 2. Create and activate a virtual environment (optional but recommended)
+cd online-security-system  
 
 
-### 3. Install the required dependencies
-pip install -r requirements.txt
+2. Create and activate a virtual environment (optional but recommended)  
 
-### 4. Environment Setup
-MONGODB_URL="your_mongodb_atlas_connection_string"
 
-### 5. run in terminal 
-uvicorn app:app --reload  
+3. Install the required dependencies-
+pip install -r requirements.txt  
+
+
+4. Environment Setup-
+MONGODB_URL="your_mongodb_atlas_connection_string"  
+
+
+5. run in terminal- 
+uvicorn app:app --reload    
+
 
 This will open the interactive FastAPI Swagger UI, where you can test the API endpoints for training and prediction.
 
